@@ -28,10 +28,11 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
+    <audio autoplay="autoplay" src="https://m10.music.126.net/20210225053904/6ea868a3fa697a77484a973321b14744/yyaac/obj/wonDkMOGw6XDiTHCmMOi/3735788553/1594/75a8/a967/cd5bec24f5c737b324c53ac9e243fdd5.m4a" ></audio>		<div class="reveal">
 			<div class="slides">
                 <section data-markdown="markdown/intro.md"
                     data-separator-vertical="^\r?\n\r?\n">
+                    <video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
                 </section>
                 <section data-markdown="markdown/misc.md"
                     data-separator-vertical="^\r?\n\r?\n">
@@ -73,7 +74,9 @@
                     { src: 'plugin/highlight.js/highlight.pack.js' },
                     { src: 'plugin/zoom-js/zoom.js', async: true },
                     { src: 'plugin/reveal-code-focus/reveal-code-focus.js', callback: function() { RevealCodeFocus(); } }
-				]
+				],
+				autoSlide: 500,
+			 	loop: true
 			});
             Reveal.configure({
                 slideNumber: "c/t",
